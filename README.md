@@ -52,3 +52,10 @@ $ bundle
 ```shell
 $ ruby app/app.rb
 ```
+
+## <a name="Usage">Usage</a>
+### To post your variable
+type `http://localhost:4000/set?somekey=somevalue` into your web browser
+
+### To get your variable
+type `http://localhost:4000/get?somekey=somevalue` into your web browser
