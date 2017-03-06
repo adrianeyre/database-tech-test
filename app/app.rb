@@ -16,7 +16,7 @@ class Database < Sinatra::Base
   end
 
   get '/reset' do
-    Variables = VariableDatabase.new
+    Variables.reset
     'Data Reset!'
   end
 

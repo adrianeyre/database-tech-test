@@ -14,8 +14,12 @@ class VariableDatabase
     {}
   end
 
+  def reset()
+    @data = {}
+  end
+
   private
-  
+
   def key_not_nil?(key)
     @data[key] != nil
   end
