@@ -14,6 +14,12 @@ describe VariableDatabase do
         variable_database.add(data)
         expect(variable_database.data[key]).to eq value
       end
+
+      it 'updates an existing variable' do
+        variable_database.add({key=>"123"})
+        variable_database.add(data)
+        expect(variable_database.data[key]).to eq value
+      end
     end
 
     describe '#get' do
