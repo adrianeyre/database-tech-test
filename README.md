@@ -73,8 +73,8 @@ type `http://localhost:4000/set?somekey=somevalue` into your web browser, to set
 type `http://localhost:4000/get?get?key=somekey` into your web browser, to retrieve JSON object of the variable `somekey`
 
 ### To reset all saved variables
-type `http://localhost:4000/reset` into your web browser, to reset all varailes
+type `http://localhost:4000/reset` into your web browser, to reset all variables
 
 ### To view all saved variables
-type `http://localhost:4000/view` into your web browser, to view all varailes
+type `http://localhost:4000/view` into your web browser, to view all variables
 
