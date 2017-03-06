@@ -20,7 +20,7 @@ class Database < Sinatra::Base
   get '/set' do
     @passed_param = env['rack.request.query_hash']
     session["stored_hash"][@passed_param.keys[0]] = @passed_param.values[0]
-    erb :set
+    erb :view
   end
 
   get '/get' do
