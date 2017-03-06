@@ -9,8 +9,8 @@ feature 'Get post request' do
   end
 
   scenario 'I can get a variable' do
-    visit '/get?somekey=somevalue'
+    visit '/get'
     expect(page.status_code).to eq(200)
-    expect(page).to have_content ('{"somekey":"somevalue"}')
+    expect(page).to have_content ('{}')
   end
 end
