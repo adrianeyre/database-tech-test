@@ -1,5 +1,5 @@
 # Database Tech Test
-#### Technologies: Ruby, Rspec
+#### Technologies: Ruby, Rspec, Capybara
 ### [Makers Academy] (http://www.makersacademy.com) - Week 10 Solo Tech Test
 
 ## Index
@@ -24,6 +24,10 @@ I want to be able post my variable
 As a user
 So that I can retrieve a variable
 I want to be able get my variable
+
+As a user
+So that I can retrieve a variable
+I want a json object to be returned
 ```
 
 ## <a name="GEMS">Gems Used</a>
