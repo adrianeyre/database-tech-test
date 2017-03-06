@@ -7,6 +7,11 @@ class Database < Sinatra::Base
   set :session_secret, 'super secret'
   set :port, 4000
 
+  get '/view' do
+    @passed_param = session["stored_hash"]
+    erb :view
+  end
+
   get '/reset' do
     session["stored_hash"] = {}
     'Data Reset!'
