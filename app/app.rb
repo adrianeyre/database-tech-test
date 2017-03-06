@@ -1,12 +1,18 @@
 require 'sinatra/base'
 
 class Database < Sinatra::Base
+  enable :sessions
+  set :session_secret, 'super secret'
+  set :port, 4000
+  use Rack::MethodOverride
+
   get '/' do
     'Hello Database!'
   end
 
   get '/set' do
-    'set'
+    @passed_param = env['rack.request.query_string'].split("=")
+    erb :set
   end
 
   get '/get' do
