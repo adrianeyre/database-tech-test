@@ -5,7 +5,7 @@ describe VariableDatabase do
   let(:data)  {{key=>value}}
 
   context "Database has been initialized" do
-    it "The Database initialize with a blank hash" do
+    it "the Database initialize with a blank hash" do
       expect(variable_database).to have_attributes(:data => {})
     end
 
@@ -15,7 +15,7 @@ describe VariableDatabase do
         expect(variable_database.data[key]).to eq value
       end
 
-      it 'updates an existing variable' do
+      it 'updates an existing variable in the database' do
         variable_database.add({key=>"123"})
         variable_database.add(data)
         expect(variable_database.data[key]).to eq value
@@ -23,12 +23,12 @@ describe VariableDatabase do
     end
 
     describe '#get' do
-      it 'gets data to the database' do
+      it 'gets data from the database' do
         variable_database.add(data)
         expect(variable_database.get(key)).to eq(data)
       end
 
-      it 'gets empty hash if key does not exist' do
+      it 'gets empty hash if key does not exist in the database' do
         expect(variable_database.get(key)).to eq({})
       end
     end
