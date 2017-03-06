@@ -11,7 +11,7 @@ class Database < Sinatra::Base
   end
 
   get '/set' do
-    @passed_param = env['rack.request.query_string'].split("=")
+    @passed_param = env['rack.request.query_hash']
     erb :set
   end
 
