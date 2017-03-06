@@ -18,22 +18,19 @@ class Database < Sinatra::Base
   end
 
   get '/set' do
-    session["stored_hash"] ||= {}
     @passed_param = env['rack.request.query_hash']
     session["stored_hash"][@passed_param.keys[0]] = @passed_param.values[0]
     erb :set
   end
 
   get '/get' do
-    session["stored_hash"] ||= {}
     content_type :json
-    @sending_param = return_hash(params["key"]).to_json
-    erb :get
+    return_hash(params["key"]).to_json
   end
 
   def return_hash(key)
     return {key=>session["stored_hash"][key]} if key_not_nil?(key)
-    return {}
+    {}
   end
 
   def key_not_nil?(key)
