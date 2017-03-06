@@ -14,7 +14,7 @@ feature 'Set post request' do
     expect(page).to have_content ('{"somekey"=>"somevalue"}')
   end
 
-  scenario 'I can set a variable with spaces' do
+  scenario 'I can set a variable value with spaces' do
     visit '/set?another=test 123'
     expect(page.status_code).to eq(200)
     expect(page).to have_content ('{"another"=>"test 123"}')
