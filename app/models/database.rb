@@ -14,6 +14,8 @@ class VariableDatabase
     {}
   end
 
+  private
+  
   def key_not_nil?(key)
     @data[key] != nil
   end
