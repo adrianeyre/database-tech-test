@@ -62,4 +62,4 @@ $ ruby app/app.rb
 type `http://localhost:4000/set?somekey=somevalue` into your web browser
 
 ### To get your variable
-type `http://localhost:4000/get?somekey=somevalue` into your web browser
+type `http://localhost:4000/get?get?key=somekey` into your web browser
