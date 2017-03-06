@@ -20,7 +20,7 @@ class Database < Sinatra::Base
 
   get '/set' do
     @passed_param = env['rack.request.query_hash']
-    session["stored_hash"].add(@passed_param.keys[0], @passed_param.values[0])
+    session["stored_hash"].add(@passed_param)
     erb :view
   end
 
@@ -29,6 +29,5 @@ class Database < Sinatra::Base
     session["stored_hash"].get(params["key"]).to_json
   end
 
-  # start the server if ruby file executed directly
   run! if app_file == $0
 end

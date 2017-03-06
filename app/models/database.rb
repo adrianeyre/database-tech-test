@@ -5,8 +5,8 @@ class VariableDatabase
     @data = {}
   end
 
-  def add(key, value)
-    @data[key] = value
+  def add(hash)
+    @data[hash.keys[0]] = hash.values[0]
   end
 
   def get(key)
