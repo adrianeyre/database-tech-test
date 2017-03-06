@@ -28,6 +28,14 @@ I want to be able get my variable
 As a user
 So that I can retrieve a variable
 I want a json object to be returned
+
+As a user
+So that I can reset the data
+I want to reset all variables
+
+As a user
+So that I can view all variable
+I want to display all variables
 ```
 
 ## <a name="GEMS">Gems Used</a>
@@ -59,7 +67,14 @@ $ ruby app/app.rb
 
 ## <a name="Usage">Usage</a>
 ### To post your variable
-type `http://localhost:4000/set?somekey=somevalue` into your web browser
+type `http://localhost:4000/set?somekey=somevalue` into your web browser, to set the variable `somekey`
 
 ### To get your variable
-type `http://localhost:4000/get?get?key=somekey` into your web browser
+type `http://localhost:4000/get?get?key=somekey` into your web browser, to retrieve JSON object of the variable `somekey`
+
+### To reset all saved variables
+type `http://localhost:4000/reset` into your web browser, to reset all varailes
+
+### To view all saved variables
+type `http://localhost:4000/view` into your web browser, to view all varailes
+
