@@ -1,6 +1,5 @@
 feature 'View all variables' do
   before(:each) do
-    visit '/reset'
     visit '/set?variable1=123'
     visit '/set?variable2=456'
   end

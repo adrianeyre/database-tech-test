@@ -8,25 +8,27 @@ class Database < Sinatra::Base
   set :session_secret, 'super secret'
   set :port, 4000
 
+  Variables = VariableDatabase.new
+
   get '/view' do
-    @passed_param = session["stored_hash"].data
+    @passed_param = Variables.data
     erb :view
   end
 
   get '/reset' do
-    session["stored_hash"] = VariableDatabase.new
+    Variables = VariableDatabase.new
     'Data Reset!'
   end
 
   get '/set' do
     @passed_param = env['rack.request.query_hash']
-    session["stored_hash"].add(@passed_param)
+    Variables.add(@passed_param)
     erb :view
   end
 
   get '/get' do
     content_type :json
-    session["stored_hash"].get(params["key"]).to_json
+    Variables.get(params["key"]).to_json
   end
 
   run! if app_file == $0

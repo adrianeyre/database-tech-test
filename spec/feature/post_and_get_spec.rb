@@ -1,6 +1,5 @@
 feature 'Post and Get variable' do
   before(:each) do
-    visit '/reset'
     visit '/set?myvariable=123'
   end
 
