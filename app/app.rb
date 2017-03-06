@@ -1,4 +1,6 @@
 require 'sinatra/base'
+require 'sinatra/json'
+require 'json'
 
 class Database < Sinatra::Base
   enable :sessions
@@ -16,7 +18,9 @@ class Database < Sinatra::Base
   end
 
   get '/get' do
-    'set'
+    headers 'Access-Control-Allow-Origin' => '*'
+    content_type :json
+    {"somekey"=>"somevalue"}.to_json
   end
 
   # start the server if ruby file executed directly
