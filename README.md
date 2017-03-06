@@ -1,5 +1,5 @@
 # Database Tech Test
-#### Technologies: Ruby, Rspec, Capybara, Json
+#### Technologies: Ruby, Rspec, Capybara, Sinatra, Json
 ### [Makers Academy] (http://www.makersacademy.com) - Week 10 Solo Tech Test
 
 ## Index
