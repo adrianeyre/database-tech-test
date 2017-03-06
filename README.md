@@ -6,6 +6,7 @@
 * [User Stories] (#Stories)
 * [Gems Used] (#GEMS)
 * [Installation] (#Install)
+* [Rspec Tests] (#Rspec)
 * [Usage] (#Usage)
 
 ## Challenege
@@ -63,6 +64,12 @@ $ bundle
 * To run the server
 ```shell
 $ ruby app/app.rb
+```
+
+## <a name="Rspec">Rspec Tests</a>
+```shell
+$ cd database-tech-test
+$ rspec
 ```
 
 ## <a name="Usage">Usage</a>
