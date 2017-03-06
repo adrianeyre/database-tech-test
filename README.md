@@ -77,7 +77,7 @@ $ rspec
 type `http://localhost:4000/set?somekey=somevalue` into your web browser, to set the variable `somekey`
 
 ### To get your variable
-type `http://localhost:4000/get?key=somekey` into your web browser, to retrieve JSON object of the variable `somekey`
+type `http://localhost:4000/get?key=somekey` into your web browser, to retrieve JSON object of `somekey`
 
 ### To reset all saved variables
 type `http://localhost:4000/reset` into your web browser, to reset all variables
