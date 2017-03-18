@@ -1,13 +1,13 @@
 # Database Tech Test
 #### Technologies: Ruby, Rspec, Capybara, Sinatra, Json
-### [Makers Academy] (http://www.makersacademy.com) - Week 10 Solo Tech Test
+### [Makers Academy](http://www.makersacademy.com) - Week 10 Solo Tech Test
 
 ## Index
-* [User Stories] (#Stories)
-* [Gems Used] (#GEMS)
-* [Installation] (#Install)
-* [Rspec Tests] (#Rspec)
-* [Usage] (#Usage)
+* [User Stories](#Stories)
+* [Gems Used](#GEMS)
+* [Installation](#Install)
+* [Rspec Tests](#Rspec)
+* [Usage](#Usage)
 
 ## Challenege
 You receive a message from a prospective employer:
